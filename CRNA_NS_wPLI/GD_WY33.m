@@ -17,7 +17,7 @@ for k=1:1000
     %%%%%%%%%%%%%%%%%%%%%%
     delta_b1=-(2*a1.*b1+rho*(2-X-b1.*b1)/norm(2-X-b1.*b1));
     delta_b2=-(2*a2.*b2+rho*(X-b2.*b2)/norm(X-b2.*b2));
-    delta_b3=-(2*a3.*b3+rho*(2-Y-b1.*b3)/norm(2-Y-b1.*b3));
+    delta_b3=-(2*a3.*b3+rho*(2-Y-b3.*b3)/norm(2-Y-b3.*b3));
     delta_b4=-(2*a4.*a4+rho*(Y-b4.*b4)/norm(Y-b4.*b4));
     %%%
     b1=b1-u*delta_b1;
