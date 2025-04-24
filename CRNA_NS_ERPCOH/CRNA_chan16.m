@@ -69,7 +69,7 @@ for s1=1:length(list2)
         B31=zeros(27,200);
         for kk1=1:27
             A2=((A1(kk1,:)));
-            B31(kk1,:)=(A2-mean(A2(1:200)));
+            B31(kk1,:)=(A2-mean(A2(1:7)));
         end
         C31=zeros(5,27,200);
         for k1=1:5
@@ -85,7 +85,7 @@ for s1=1:length(list2)
         B32=zeros(27,200);
         for kk1=1:27
             A2=((A3(kk1,:)));
-            B32(kk1,:)=(A2-mean(A2(1:200)));
+            B32(kk1,:)=(A2-mean(A2(1:7)));
         end
         C32=zeros(5,27,200);
         for k1=1:5
