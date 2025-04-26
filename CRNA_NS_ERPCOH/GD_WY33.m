@@ -30,8 +30,6 @@ for k=1:1000
     a3=max(a3+rho*(2-Y-b3.^2),0);
     a4=max(a4+rho*(Y-b4.^2),0);
     %%%%%%%%%%%%%%%
-    X=X-u*delta_X;
-    Y=Y-u*delta_Y;
     f2=norm(a*X-b*Y)+1/(200*sum((a*X+b*Y).^2)-sum(a*X+b*Y)^2);
     if norm(f1-f2)<0.0000001
         break;
